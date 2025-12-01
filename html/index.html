@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aljon Montecalvo | Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://kit.fontawesome.com/3d7bb0d906.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <nav>
+            <a href="#header"><img src="../Pictures/Logo.png" alt="ALJON" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        
+        <div class="header-content">
+            <p class="subtitle">Web & Software Developer</p>
+            <h1>Hi, I'm <span class="highlight typing-text"></span></h1>
+            <p class="tagline">Creating impactful digital experiences from Consolacion, Cebu.</p> 
+        </div>
+    </div>
+                
+    <a href="../CV/Montecalvo_Resume.pdf" download class="btn btn2">Download Resume</a>
+</header>
+
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../Pictures/aaa.png" alt="Profile Picture">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="description">
+                    Hello! I’m Aljon Montecalvo, a 21 years old aspiring web developer with a strong passion for building meaningful digital experiences.
+                    I’m driven by curiosity, continuous learning, and the desire to grow my career in the ever-evolving world of technology. 
+                    I enjoy turning ideas into functional, user-friendly solutions and I’m committed to developing my skills to become a well-rounded, impactful developer.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications', event)">Certifications</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span>HTML, CSS, JavaScript, Vue.JS, TailwindCSS, PHP, React</li>
+                        <li><span>Backend</span>Java, SQL, Node.js, Laravel, ASP.NET</li>
+                        <li><span>AI Prompting / Vibe Coding</span>ChatGPT, Gemini, DeepSeek</li>
+                        <li><span>Logical Thinking</span>Analyzing, Debugging, Breaking down complex problems</li>
+                        <li><span>Basic Skills of No Code Platform</span>Wix and WordPress</li>
+                        <li><span>Basic Understanding of Cloud Databases</span>Firebase and Supabase</li>
+                        <li><span>Basic Skills of Hardware and Networking</span>Reformat, Change LCD, Configure and setting up router, and etc.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>August 2025</span>Studying for Computer System Servicing<br><i>Rosemont Hills Montessori Danao Campus</i></li>
+                        <li><span>2022 - Present</span>Bachelor of Science in Information Technology<br><i>Cebu Technological University Danao Campus</i></li>
+                        <li><span>2020 - 2022</span>Information Communication Technology Strand<br><i>Informatics College</i></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>2024</span>Completed the Introduction to SQL in SoloLearn</li>
+                        <li><span>2023</span>Completed the CodeChum Basic C Programming</li>
+                        <li><span>2020</span>Best in C Programming 1 (CIP + Prog Design) <br>Best in C Programming 2 (PLF + C Programming) </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Bringing responsive designs to life using modern frameworks.</p>
+            </div>
+            <div class="info-card">
+                <i class="fa-solid fa-server"></i>
+                <h3>Databases</h3>
+                <p>Building robust server-side solutions for scalability.</p>
+            </div>
+            <div class="info-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Approach</h3>
+                <p>Writing clean, maintainable code with user-centric design.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div class="service-card">
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Crafting digital interfaces that captivate visually and ensure a delightful user journey.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Building responsive websites that blend form and function perfectly.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Mgmt</h2>
+                <p>Designing optimized SQL databases to organize and retrieve data efficiently.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Featured Work</h1>
+        <div class="work-list"> 
+            <div class="work">
+                <img src="../Pictures/work1.png" alt="Calculator App">
+                <div class="layer">
+                    <h3>Calculator App</h3>
+                    <p>A JavaScript starter project that sparked my passion for logic.</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../Pictures/work2.png" alt="Responsive Design">
+                <div class="layer">
+                    <h3>Responsive Layout</h3>
+                    <p>Exploring the power of CSS Grid and Flexbox for mobile adaptability.</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../Pictures/work4.png" alt="Pong Game">
+                <div class="layer">
+                    <h3>Pong Game</h3>
+                    <p>A classic game recreation using pure HTML5 and JavaScript.</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/MontecalvoAm" target="_blank" class="btn">See More on GitHub</a>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Connect</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> aljon.montecalvo08@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +63 993 588 3771</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/aljon.montecalvo08" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ajonjonnn/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/MontecalvoAm" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="../CV/Montecalvo_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="copyright">
+    <p>Copyright © Aljon Montecalvo. Made with <i class="fa-solid fa-heart"></i></p>
+</div>
+
+<script src="../js/main.js"></script> 
+</body>
+</html>
