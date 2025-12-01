@@ -1,7 +1,4 @@
 /* --- VARIABLES --- */
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwuzCiJPFKjZlV7owHZp918MDQsULmzFCjw7qnrRaeEDiAmtb89xOSKH7j7QgJkydPP/exec';
-const form = document.forms['submit-to-google-sheet'];
-const msg = document.getElementById("msg");
 
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
@@ -9,21 +6,7 @@ const tabcontents = document.getElementsByClassName("tab-contents");
 const sideMenu = document.getElementById("sidemenu");
 const barMenu = document.getElementById("bars");
 
-/* --- GOOGLE SHEETS SUBMISSION --- */
-if(form) {
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully!";
-            setTimeout(function(){
-                msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message));
-    });
-}
+
 
 /* --- TAB LOGIC --- */
 function opentab(tabname, event){
