@@ -66,6 +66,25 @@ hiddenElements.forEach((el) => {
 const textToType = "Aljon Montecalvo";
 const typingElement = document.querySelector(".typing-text");
 let charIndex = 0;
+/* --- WORK VIDEO PLAY ON HOVER --- */
+const workCards = document.querySelectorAll('.work');
+
+workCards.forEach(card => {
+    const video = card.querySelector('video');
+    
+    if(video) {
+        // When mouse enters, play video
+        card.addEventListener('mouseenter', () => {
+            video.play();
+        });
+
+        // When mouse leaves, pause and reset to beginning
+        card.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0; // Optional: Resets video to start
+        });
+    }
+});
 
 function typeWriter() {
     if (charIndex < textToType.length) {
