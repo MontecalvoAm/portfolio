@@ -616,6 +616,33 @@ nav .fa-solid {
     color: var(--text-main); /* Or use var(--accent) if you want a gold cursor */
     margin-left: 5px;
 }
+/* --- LOADING SCREEN --- */
+#preloader {
+    background: #121212; /* Matches your site background */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999; /* Sits on top of EVERYTHING */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease; /* Smooth fade out effect */
+}
+
+/* The Spinner Animation */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #333; /* Dark grey track */
+    border-top: 3px solid #eec18d; /* Your Gold Accent Color */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 @keyframes blink {
     0%, 100% { opacity: 1; }
